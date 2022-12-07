@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+<listeners>
+		<listener class-name="Utilities.Reporting"></listener>
+	</listeners>
+  <test  name="chromee">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+    <class name="TestCases.TC001__drag__"/>
+    <class name="TestCases.TC001___dranAndDrop"/>
+      <class name="TestCases.TC001__Resize__"/>
+      <class name="TestCases.TC001__selectable" />
+      <class name="TestCases.TC001__sortable"/>
+    </classes>
+  </test> 
+  
+   
+</suite> 
